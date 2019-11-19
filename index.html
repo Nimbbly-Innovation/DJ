@@ -11,6 +11,8 @@
 
 	<title>DJ-LC | world's famous</title>
 
+	<link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574155025/dj%20lc/white-logo-fav.png"/>
+
 	<!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -19,27 +21,31 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/loaders.css">
-		
+    <link rel="stylesheet" type="text/css" href="css/loaders.css">
 
 </head>
 <body id="homepage">
-	
+
 	<header>
+		<div class="fullscreen-video-wrap">
+			<video src="https://res.cloudinary.com/duw1ccgzp/video/upload/v1574150478/dj%20lc/header-bg.mp4" autoplay loop playsinline muted></video>
+		</div>
+		<div class="header-overlay"></div>
+
 		<div class="container-fluid">
 			<div class="row">
 
 				<div class="pos-f-t navbar__content">
 				  <div class="collapse navbar__collapsible" id="navbarToggleExternalContent">
-				    <div class="bg-dark p-4 collapsible__content">
+				    <div class="p-4 collapsible__content">
 				    	<span><ion-icon class="play__btn" name="play-circle"></ion-icon></span>
 				      <h5 class="text-white h4 navbar__heading">Explore mixed tape</h5>
-				      <span class="text-muted navbar__subheading">Queued tracks playlist</span>
+				      <span class="navbar__subheading">Queued tracks playlist</span>
 				    </div>
 				  </div>
 				  <nav class="navbar navbar-dark transparent nav__content">
 				  	<div class="nav__logo--box">
-				  		<img class="nav__logo--image" src="img/white-logo.png">
+				  		<img class="nav__logo--image" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150008/dj%20lc/white-logo.png">
 				  	</div>
 				    <button class="navbar-toggler ml-auto nav__button" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 				      <span class="navbar-icon"><ion-icon class="nav__icon" name="apps"></ion-icon></span>
@@ -50,40 +56,14 @@
 			</div>
 		</div>
 
-		<h1 class="main__text lax" data-lax-translate-y="0 0, 400 -300" data-lax-opacity="0 1, 50 1, 200 0">WORLD'S FAMOUS</h1>
-		<ion-icon class="moveup__icon" name="navigate"></ion-icon>
-
-	</header>
-
-
-	<div class="image__bg"></div>
-	<img class="image__shadow" src="img/shadow.png">
-	<img class="image__shadow2" src="img/shadow.png">
-
-	<div class="container-fluid secondary text-center lax" data-lax-translate-y="0 0, 400 -100" data-lax-opacity="0 0, 400 1">
-		<div class="">
-			<a href="details.html" class="btn link__btn">ABOUT DJ LC</a>
-			<h4 class="text__title">Preview</h4>
-		</div>
-		
-		<p class="sub__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-	</div>
-
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-4"></div>
-						<div class="col-8"></div>
-						<div class="col-12"></div>
-					</div>
-				</div>
-				<div class="col-lg-4"></div>
-				<div class="col-lg-4"></div>
+		<div class="container h-contents">
+			<h1 class="main__text">WORLD'S FAMOUS</h1>
+			<div class="text-center">
+				<div class="line"></div>
+				<a href="details.html" class="btn link__btn2">ABOUT DJ LC</a>
 			</div>
 		</div>
-	</section>
+	</header>
 
 	<footer class="bottom__content text-center">
 		<p class="footer__text">Designed by <a href="#">Nimbbly Innovation</a></p>
@@ -106,31 +86,11 @@
 	<!-- Ionicons -->
 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/lax.js" >
-
 	<script src="loaders.css.js"></script>
 
 	<script>
-		// loaders
-		$(document).ready(function(){
 
-			$('#details').hide();
-
-			$(window).on({
-				load: function(){
-					setTimeout(function() {
-				        $("#details").show('fadeIn', {}, )
-				    }, 2000);
-
-				    setTimeout(function() {
-				        $(".loader").hide('fadeOut', {}, )
-				    }, 2000);
-
-				}
-			})
-		})
-
-		// parallax
+		/* parallax
 		window.onload = function() {
 			lax.setup() // init
 
@@ -140,7 +100,7 @@
 			}
 
 			window.requestAnimationFrame(updateLax)
-		}
+		}*/
 
 	</script>
 
